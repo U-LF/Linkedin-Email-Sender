@@ -8,8 +8,6 @@ pip install selenium webdriver-manager
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
@@ -250,7 +248,7 @@ def main():
         
         # Step 2: Scroll and extract posts
         # Adjust num_scrolls and scroll_pause as needed
-        scraper.scroll_and_extract(num_scrolls=20, scroll_pause=2)
+        scraper.scroll_and_extract(num_scrolls=10, scroll_pause=2)
         
         # Step 3: Display sample posts
         scraper.print_posts(limit=5)
