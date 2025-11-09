@@ -1,2 +1,4 @@
 opencv-python
 pyautogui
+selenium 
+webdriver-manager
